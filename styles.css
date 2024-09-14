@@ -14,6 +14,7 @@
 }
 
 body {
+  padding: 0;
   margin: 0;
   display: block;
   box-sizing: content-box;
@@ -27,7 +28,6 @@ body {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 a {
@@ -196,7 +196,6 @@ template {
 header {
   background-color: var(--dark-color);
   padding: 1em;
-  margin: auto;
   justify-content: center;
   align-items: center;
 }
@@ -524,8 +523,11 @@ footer .icon-link-container {
   width: 10%;
 }
 .contact p {
-  margin: 0 0 0 0.65em;
+  margin: 0;
   padding: 0;
+}
+.contact-info > p {
+  margin-left: 0.7em;
 }
 .foot-btn-container {
   width: 80%;
@@ -627,9 +629,6 @@ footer .email-btn {
     font-weight: 600;
     font-size: 1rem;
   }
-  header {
-    width: 90%;
-  }
   .prof-pic-container {
     display: none;
     width: 0;
@@ -654,19 +653,30 @@ footer .email-btn {
   width: 100%;
 }
 }
-@media (max-width: 460px) {
+@media (max-width: 490px) {
+  main {
+    min-width: 500px;
+    padding: 1em;
+  }
   header {
     flex-direction: column;
+    min-width: 500px;
+    padding: 1.25em;
+    margin: 0;
+  }
+  .nav-div {
+    width: 90% !important;
   }
   header .logo-div {
     width: 40%;
   } 
-  header .nav-div {
-    width: 90%;
-  }
   .nav-menu-container li > a {
     font-weight: 700;
     font-size: 1.15rem;
   }
-
+  footer {
+    min-width: 520px;
+    margin: 0;
+    padding: 0;
+  }
 }
