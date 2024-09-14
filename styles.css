@@ -635,7 +635,6 @@ footer .email-btn {
   flex-direction: column;
 }
 .footer-menu-container {
-  border: 1px solid red;
   width: 100% !important;
   margin: auto;
 }
@@ -644,7 +643,6 @@ footer .email-btn {
 }
 .foot-btn-container {
   width: 100%;
-  border:1px solid green;
 }
 }
 @media (max-width: 460px) {
