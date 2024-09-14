@@ -251,9 +251,9 @@ nav ul li a:hover::before {
 }
 main {
   background-color: var(--dark-color);
-  width: 85%;
+  width: 80%;
   margin: 2em auto;
-  padding: 3em;
+  padding: 2em;
   border-radius: 50px;
 }
 main section {
@@ -481,7 +481,6 @@ footer .icon-link-container {
 }
 .icon-link-container > a {
   width: 14%;
-  border: 1px solid red;
 }
 .icon-link-container img {
   display: block;
@@ -619,7 +618,7 @@ footer .email-btn {
     font-size: 1rem;
   }
   header {
-    width: 100%;
+    width: 90%;
   }
   .prof-pic-container {
     display: none;
