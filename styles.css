@@ -248,6 +248,26 @@ nav ul li a::before {
 nav ul li a:hover::before {
   width: 100%;
 }
+
+#topButton {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+  color: var(--light-color);
+  padding: .5em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--second-color-darker);
+  transition: background-color 0.3s ease;
+}
+#topButton:hover {
+  background-color: var(--second-color);
+  color: var(--darker-color);
+}
+
+
 main {
   background-color: var(--dark-color);
   width: 80%;
@@ -559,6 +579,7 @@ footer .email-btn {
     width: 100%;
   }
 }
+
 @media (max-width: 860px) {
   .web-dev-skill {
     width: 100%;
@@ -655,12 +676,12 @@ footer .email-btn {
 }
 @media (max-width: 490px) {
   main {
-    min-width: 500px;
+    min-width: 360px;
     padding: 1em;
   }
   header {
     flex-direction: column;
-    min-width: 500px;
+    min-width: 360px;
     padding: 1.25em;
     margin: 0;
   }
@@ -675,7 +696,7 @@ footer .email-btn {
     font-size: 1.15rem;
   }
   footer {
-    min-width: 520px;
+    min-width: 380px;
     margin: 0;
     padding: 0;
   }
