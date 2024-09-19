@@ -334,6 +334,9 @@ main section {
 a {
   list-style: none;
 }
+a:hover {
+  color: var(--second-color);
+}
 .dl-resume-btn button {
   height: 2.75em;
   background-color: var(--second-color);
@@ -382,8 +385,6 @@ a {
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   }
-
-  
   .skills-img-div1 { grid-area: 1 / 1 / 2 / 2; }
   .skills-img-div2 { grid-area: 1 / 2 / 2 / 3; }
   .skills-img-div3 { grid-area: 1 / 3 / 2 / 4; }
@@ -406,7 +407,7 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
+
   .skills-grid-item img {
     width: 50%;
   }
@@ -483,6 +484,28 @@ a {
   .empty-shade {
     background-color: var(--light-dark-color)
   }
+
+ .skills-tab img {
+  width: 15%;
+ }
+ .skills-tab h3 {
+  margin-left: .75em;
+ }
+ .skillstab-grid-mcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1em;
+  margin-bottom: 3em;
+  }
+    
+  .skillstab-grid-div {
+
+   }
+   .skillstab-grid-div img {
+    width: 100%;
+    display: block;
+    margin: auto;
+   }
 
 .footer-menu-container{
   justify-content: space-evenly;
