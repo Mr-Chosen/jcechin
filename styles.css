@@ -225,8 +225,8 @@ header .nav-div nav li {
   display: inline-block;
 }
 .nav-menu-container li > a {
-  font-weight: 800;
-  color: var(--light-color);
+  font-weight: 600;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
@@ -337,6 +337,12 @@ a {
 a:hover {
   color: var(--second-color);
 }
+
+.nav-menu-list.active {
+  border-bottom: 2px solid var(--second-color-darker);
+  color: white !important;
+  }
+
 .dl-resume-btn button {
   height: 2.75em;
   background-color: var(--second-color);
@@ -484,9 +490,11 @@ a:hover {
   .empty-shade {
     background-color: var(--light-dark-color)
   }
-
+  .skills-tab {
+    margin-bottom: 1.5em;
+  }
  .skills-tab img {
-  width: 15%;
+  width: 16%;
  }
  .skills-tab h3 {
   margin-left: .75em;
@@ -519,7 +527,7 @@ footer .icon-link-container {
   width: 45%;
 }
 .icon-link-container > a {
-  width: 14%;
+  width: 10%;
 }
 .icon-link-container img {
   display: block;
@@ -574,6 +582,11 @@ footer .icon-link-container {
   margin: 1.5em auto 0 auto;
   justify-content: space-evenly;
 }
+
+.icon-link-container a img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
 footer .dl-resume-container {
   width: auto;
 }
@@ -597,6 +610,13 @@ footer .email-btn {
   .intro-sect .email-btn {
     margin-left: 1em;
     width: 100%;
+  }
+  .sect-container {
+    margin-top: 0 !important;
+    padding-top: 0;
+  }
+  main {
+    padding-top: 1em;
   }
 }
 
@@ -677,6 +697,9 @@ footer .email-btn {
   .prof-detail-container {
     width: 100%;
   }
+  .skills-tab img {
+    width: 20%;
+  }
 
 }
 @media (max-width: 560px) {
@@ -692,6 +715,12 @@ footer .email-btn {
 }
 .foot-btn-container {
   width: 100%;
+}
+.skills-tab {
+  flex-direction: column;
+}
+.skills-tab img {
+  width: 10%;
 }
 }
 @media (max-width: 490px) {
