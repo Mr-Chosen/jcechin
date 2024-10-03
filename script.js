@@ -33,8 +33,6 @@ links.forEach(link => {
 window.addEventListener('scroll', updateActiveLink);
 
 
-
-
 //GO-TO-TOP-BUTTON
 const topButton = document.getElementById('topButton');
 const topOfPage = document.getElementById('topOfPage');
